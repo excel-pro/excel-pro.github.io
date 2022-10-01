@@ -11,13 +11,13 @@
 ### 1.1 Excel文件的加载和管理
 点击右边的 Excel文件菜单项，对打开上次操作的Excel文件，如果想打开其他Excel文件，可以点击文件菜单中的打开按钮，或点击从库里选择按钮。
 
-![acb65f4238346401a816805cb34b12bc.png](./ExcelHub/ScreenShots/ConfigDb1.png)
+![acb65f4238346401a816805cb34b12bc.png](./images/ConfigDb1.png)
 
 **原则：要对操作过的文件有详细的保存和记录**
 当选择从库里打开按钮，会弹出如下界面，双击列表里
 同时存储在上面这张表中，以便可以从历史记录中取出来，进行删除等操作。界面如下设计
 
-![23b209aeb5a30d3e248d27e4da87cd71.png](./ExcelHub/ScreenShots/ExcelHistory.png)
+![23b209aeb5a30d3e248d27e4da87cd71.png](./images/ExcelHistory.png)
 
 
 用户可以通过对列表项进行双击操作调入，也可以对有的无用的记录进行删除。
@@ -31,12 +31,12 @@
 
 #### 1.2.1 表格化配置
 本工具是通过Excel的表(Table)来确定需要被操作的数据区，需要确定数据区的左上角（单元格名称）和右下角（单元格名称）区域。然后需要确定数据区应用的Sheet页，需要假定本次导入操作对 不同Sheet页具有同样的待处理数据区。如果确实需要对该数据文件进行多次导入操作，则需要定义另一次数据导入操作配置。完成了数据区域指定和Sheet页的配置后，即可以进行 标记表的程序自动化操作。界面设计如下：
-![de8af06b711274923b9a55830fe78390.png](./ExcelHub/ScreenShots/Tablized.png)
+![de8af06b711274923b9a55830fe78390.png](./images/Tablized.png)
 
 
 #### 1.2.2 数据库配置
 导入数据库时，需要确定导入哪个数据库？哪个表？以及数据区的单元表格与数据库表字段的映射。 这也可以通过配置界面完成。
-![69a9f0c653242391f395a3c6ea0d55fa.png](./ExcelHub/ScreenShots/DBTable.png)
+![69a9f0c653242391f395a3c6ea0d55fa.png](./images/DBTable.png)
 
 
 #### 1.2.3 配置转换适配器
@@ -46,6 +46,6 @@
 
 ### 1.3 Excel数据导入
 在进行上面两个步骤后，就可以对数据进行导入数据库的操作了，具体操作如下图所示：
-![fcc3a8e85d5916eceb4d89abac2f093d.png](./ExcelHub/ScreenShots/import.png)
+![fcc3a8e85d5916eceb4d89abac2f093d.png](./images/import.png)
 
 点击主界面上的 数据预览 按钮， 会弹出数据预览窗口，该窗体上面会有两个TAB页面，一个是原始数据，一个时处理后数据，此时点击数据整理按钮，系统会对原始数据进行转换，并显示处理后数据，处理后的数据若没有问题， 直接点击 导入数据库按钮，就完成了数据导入工作。
